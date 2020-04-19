@@ -1,10 +1,9 @@
-package org.si.com.repository;
+package org.sid.com.repository;
 
-import org.si.com.entity.Costumer;
+import org.sid.com.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource
-public interface CostumerRepository extends JpaRepository<Costumer, Long> {
-
+public interface ProductRepository extends JpaRepository<Product, Long> {
 }

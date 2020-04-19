@@ -1,5 +1,4 @@
-package org.si.com.entity;
-
+package org.sid.com.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,14 +11,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
-@ToString
-public class Costumer {
+@NoArgsConstructor @AllArgsConstructor @ToString @Data
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nom;
-    private String email;
+    private String name;
+    private double price;
 }

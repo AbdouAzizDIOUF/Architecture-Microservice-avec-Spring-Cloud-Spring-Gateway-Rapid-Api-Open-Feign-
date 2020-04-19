@@ -13,8 +13,9 @@ public class CustomerServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(CustomerServiceApplication.class, args);
     }
+
     @Bean
-    CommandLineRunner start(CostumerRepository costumerRepository){
+    CommandLineRunner start(CostumerRepository costumerRepository) {
         return args -> {
             costumerRepository.save(new Costumer(null, "DIOUF", "abdouazizdiouf@gmail.com"));
             costumerRepository.save(new Costumer(null, "Samebou", "maman@gmail.com"));
