@@ -1,9 +1,13 @@
 package org.sid.com.repository;
 
-import org.sid.com.entity.Product;
+import org.sid.com.entity.ProductItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
+import java.util.List;
+
+
 @RepositoryRestResource
-public interface ProductRepository extends JpaRepository<Product, Long> {
+public interface ProductItemRepository extends JpaRepository<ProductItem, Long> {
+    List<ProductItem> findByBillId(Long billID);
 }

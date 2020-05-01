@@ -12,10 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
-@ToString
+@NoArgsConstructor @AllArgsConstructor @Data @ToString
 public class Costumer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

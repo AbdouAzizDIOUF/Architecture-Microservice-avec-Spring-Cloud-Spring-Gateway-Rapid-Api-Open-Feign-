@@ -26,4 +26,17 @@ public class FallBackRestController {
 
         return map;
     }
+
+    @GetMapping("/covideFallBack")
+    public Map<String, String> covideFallBack(){
+        Map<String, String> map = new HashMap<>();
+        map.put("date :", "2020-04-20");
+        map.put("last_update: ", "2020-04-20 23:44:50");
+        map.put("confirmed: ", "2472259");
+        map.put("confirmed_diff: ","70880");
+        map.put("deaths: ", "169986");
+        map.put("deaths_diff: ","4942");
+
+        return map;
+    }
 }

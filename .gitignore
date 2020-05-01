@@ -1,31 +1,18 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
-!**/src/test/**
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
 .idea
-*.iws
-*.iml
-*.ipr
+billing-service/.idea
+billing-service/target
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
+cloud-gateway/.idea
+cloud-gateway/target
 
-### VS Code ###
-.vscode/
+costumer-service/.idea
+costumer-service/target
+
+eureka-sever/.idea
+eureka-sever/target
+
+hystrix-dashboard/.idea
+hystrix-dashboard/target
+
+inventor-service/.idea
+inventor-service/target
